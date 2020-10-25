@@ -1,5 +1,9 @@
 <template>
   <div id="home">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <div class="info container">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
@@ -21,7 +25,14 @@
       </p>
 
       <div class="testimonials">
-        <carousel :perPageCustom="[[320, 1], [768, 2], [1199, 3]]">
+        <h3>TESTIMONIALS</h3>
+        <carousel
+          :perPageCustom="[
+            [320, 1],
+            [768, 2],
+            [1199, 3],
+          ]"
+        >
           <slide>
             <div>
               <b-card
@@ -38,7 +49,6 @@
                   the bulk of the card's content.
                 </b-card-text>
 
-                <b-button href="#" variant="primary">Go somewhere</b-button>
               </b-card>
             </div>
           </slide>
@@ -59,7 +69,6 @@
                   the bulk of the card's content.
                 </b-card-text>
 
-                <b-button href="#" variant="primary">Go somewhere</b-button>
               </b-card>
             </div>
           </slide>
@@ -80,7 +89,6 @@
                   the bulk of the card's content.
                 </b-card-text>
 
-                <b-button href="#" variant="primary">Go somewhere</b-button>
               </b-card>
             </div>
           </slide>
@@ -101,33 +109,47 @@
                   the bulk of the card's content.
                 </b-card-text>
 
-                <b-button href="#" variant="primary">Go somewhere</b-button>
+                
               </b-card>
             </div>
           </slide>
         </carousel>
       </div>
+    
+      
     </div>
+    <Footer />
   </div>
 </template>
 
+
 <script>
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { Carousel, Slide } from "vue-carousel";
+import Footer from './footer';
 export default {
   components: {
     Carousel,
     Slide,
+    FontAwesomeIcon,
+    Footer
   },
 };
 </script>
 
 <style scoped>
 .info {
-  margin-top: 3vh;
   text-align: justify;
+  position: relative;
 }
 
 .testimonials {
-  margin-top: 5vh;
+  margin-top: 6vh;
 }
+
+.VueCarousel-dot {
+  margin: 0 !important;
+}
+
+
 </style>

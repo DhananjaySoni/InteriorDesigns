@@ -29,7 +29,7 @@ export default {
 }
 
 #nav {
-  padding: 30px;
+  padding: 5vw;
 }
 
 #nav a {
