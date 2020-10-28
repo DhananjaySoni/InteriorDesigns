@@ -23,7 +23,6 @@ Vue.use(VueCarousel);
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import '@fortawesome/fontawesome-free/css/all.css'
 import '@fortawesome/fontawesome-free/js/all.js'
-
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 new Vue({

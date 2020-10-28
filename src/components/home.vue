@@ -4,6 +4,29 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
+    <div>
+      <b-modal id="info-modal" title="infoModal">
+      <b-form inline>
+    <label class="sr-only" for="inline-form-input-name">Name</label>
+    <b-input
+      id="inline-form-input-name"
+      class="mb-2 mr-sm-2 mb-sm-0"
+      placeholder="John Doe"
+    ></b-input>
+
+    <label class="sr-only" for="inline-form-input-number">mobile number</label>
+    <b-input-group prepend="+91" class="mb-2 mr-sm-2 mb-sm-0">
+      <b-input id="inline-form-input-username" placeholder="Mobile number"></b-input>
+    </b-input-group>
+
+    <b-form-checkbox class="mb-2 mr-sm-2 mb-sm-0">Remember me</b-form-checkbox>
+
+    <b-button variant="primary">Save</b-button>
+  </b-form>
+      </b-modal>
+    </div>
+
     <div class="info container">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
@@ -48,7 +71,6 @@
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </b-card-text>
-
               </b-card>
             </div>
           </slide>
@@ -68,7 +90,6 @@
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </b-card-text>
-
               </b-card>
             </div>
           </slide>
@@ -88,7 +109,6 @@
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </b-card-text>
-
               </b-card>
             </div>
           </slide>
@@ -108,17 +128,12 @@
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </b-card-text>
-
-                
               </b-card>
             </div>
           </slide>
         </carousel>
       </div>
-    
-      
     </div>
-    <Footer />
   </div>
 </template>
 
@@ -126,30 +141,40 @@
 <script>
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { Carousel, Slide } from "vue-carousel";
-import Footer from './footer';
+
 export default {
+  data(){
+    return{
+
+    }
+  },
   components: {
     Carousel,
     Slide,
     FontAwesomeIcon,
-    Footer
+  },
+  mounted() {
+    setTimeout(()=>{
+      this.$bvModal.show('info-modal');
+    },1000);
   },
 };
 </script>
 
 <style scoped>
+
+
 .info {
   text-align: justify;
   position: relative;
+  padding-top:3vh;
 }
 
 .testimonials {
   margin-top: 6vh;
 }
 
-.VueCarousel-dot {
-  margin: 0 !important;
+.card{
+  color:#000;
 }
-
-
 </style>
