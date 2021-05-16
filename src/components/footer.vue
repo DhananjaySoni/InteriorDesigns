@@ -26,10 +26,10 @@
         </div>
         <div class="footer-content">
           <p>
-            Sanjay Apartment, Behind Tata Service Center, Chaukaghat Water Tank,
-            Chaukaghat, Varanasi
+            Address
           </p>
-          <p>+91 7355144324</p>
+          <p class="mb-0">+91 9876543210</p>
+          <p>+91 1234567890</p>
         </div>
       </div>
 
@@ -57,13 +57,13 @@
       <div class="social">
         <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
         <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-        <a href="mailto:brajdecoranddesigner@gmail.com"
+        <a href="mailto:abc@gmail.com"
           ><i class="far fa-envelope fa-2x"></i
         ></a>
-        <a href="https://wa.me/918574757385" target="_blank"
+        <a href="https://wa.me/911234567890" target="_blank"
           ><i class="fab fa-whatsapp fa-2x"></i
         ></a>
-        <a href="tel:917355144324"
+        <a href="tel:911234567890"
           ><i class="fas fa-phone-square-alt fa-2x"></i
         ></a>
       </div>
@@ -78,10 +78,11 @@
 
 <style scoped>
 #footer {
-  background: #3B1F16;
+  background: #3F3A36;
   width: 100%;
   height: auto;
   padding: 2vh 0 0 0;
+  color:#ddb27a;
 }
 
 .footer-heading {
